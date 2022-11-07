@@ -93,7 +93,7 @@ export default function Home() {
         <span>
           O novo rastreador da Nettracker vem para mudar de vez o mercado de
           rastreamento veicular. Diferente de tudo já visto, nós trazemos uma
-          tecnologia inovadora. Confira já algumas vatagens abaixo:
+          tecnologia inovadora. Confira algumas vantagens abaixo:
         </span>
       </section>
 
