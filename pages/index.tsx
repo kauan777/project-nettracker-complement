@@ -20,7 +20,7 @@ export default function Home() {
       ficará off-line.`,
     },
     {
-      id: 1,
+      id: 2,
       title: "Chip multi-operadoras",
       description: `O nosso chip é multi-operadoras, então quando o seu
       rastreador sair de área por um lugar que tal operadora não alcance, ele
