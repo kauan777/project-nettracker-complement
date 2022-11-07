@@ -1,0 +1,173 @@
+.container {
+  background: linear-gradient(180deg, #1b1b1b 0%, #000000 100%);
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+
+  .overlay {
+    position: relative;
+    display: flex;
+    height: 65vh;
+    width: 100%;
+
+    @media (min-height: 700px) {
+      & {
+        height: 60vh;
+      }
+    }
+
+    @media (min-height: 800px) {
+      & {
+        height: 55vh;
+      }
+    }
+
+    @media (min-height: 840px) {
+      & {
+        height: 49vh;
+      }
+    }
+
+    .backgroundOverlay {
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      background: linear-gradient(180deg, #1b1b1b 0%, #050505 100%);
+      height: 40vh;
+      padding: 0rem 2rem;
+
+      .logo {
+        margin: 3rem 2rem;
+      }
+
+      .imageContainer {
+        position: relative;
+        z-index: 1;
+        border: 2px solid;
+        border-image: linear-gradient(#00a2ff, #33ff00) 1 100%;
+        width: 99%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 250px;
+        margin: 0 auto;
+        margin-bottom: -2rem;
+        overflow: hidden;
+
+        .tracker {
+          padding: 1.2rem;
+
+          z-index: 1;
+          background: linear-gradient(
+            152.48deg,
+            #000000 -3.58%,
+            #2c2c2c 105.81%
+          );
+
+          filter: drop-shadow(0px 14px 111px rgba(0, 0, 0, 0.11))
+            drop-shadow(0px 7.00684px 55.5542px rgba(0, 0, 0, 0.0836366))
+            drop-shadow(0px 4.22059px 33.4632px rgba(0, 0, 0, 0.0716748))
+            drop-shadow(0px 2.70478px 21.445px rgba(0, 0, 0, 0.0627984))
+            drop-shadow(0px 1.75302px 13.8989px rgba(0, 0, 0, 0.055))
+            drop-shadow(0px 1.1035px 8.74921px rgba(0, 0, 0, 0.0472016))
+            drop-shadow(0px 0.634032px 5.02697px rgba(0, 0, 0, 0.0383252))
+            drop-shadow(0px 0.279054px 2.2125px rgba(0, 0, 0, 0.0263634));
+        }
+      }
+    }
+  }
+
+  .introduction {
+    padding: 0rem 2rem 1rem 2rem;
+    z-index: 2;
+    width: 100%;
+    h1 {
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 700;
+      transition: 0.2s linear;
+    }
+
+    span {
+      color: #fff;
+      font-weight: 300;
+      text-align: justify;
+      display: inline-block;
+      padding: 0.5rem 0rem;
+      color: #e0e0e0;
+    }
+  }
+  .division {
+    width: 83%;
+    margin: 1rem auto;
+    background-color: #4d4d4d;
+    border: none;
+    height: 2px;
+  }
+
+  .containerAdvantage {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 2rem 0rem 2rem;
+
+    .itemAdvantage {
+      color: #fff;
+      text-align: justify;
+      margin: 1rem 0rem;
+
+      h4 {
+        position: relative;
+        font-weight: 600;
+        margin-bottom: 0.7rem;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: -10px;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #00a2ff;
+          width: 6px;
+          border-radius: 2px;
+          height: 50%;
+        }
+      }
+
+      span {
+        font-weight: 300;
+        color: #e0e0e0;
+      }
+    }
+  }
+
+  .containerSocialMedia {
+    padding: 1rem 2rem 5rem 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+
+    .itemSocialMedia {
+      color: #00e0ff;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-decoration: none;
+      align-items: center;
+      gap: 0.5rem;
+      border: 2px solid #00e0ff;
+      filter: drop-shadow(0px 91px 135px rgba(0, 224, 255, 0.31))
+        drop-shadow(0px 38.0176px 56.3998px rgba(0, 224, 255, 0.222845))
+        drop-shadow(0px 20.326px 30.154px rgba(0, 224, 255, 0.184793))
+        drop-shadow(0px 11.3946px 16.9041px rgba(0, 224, 255, 0.155))
+        drop-shadow(0px 6.05159px 8.97764px rgba(0, 224, 255, 0.125207))
+        drop-shadow(0px 2.5182px 3.7358px rgba(0, 224, 255, 0.0871551));
+      padding: 1rem;
+    }
+  }
+}
